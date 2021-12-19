@@ -27,6 +27,7 @@
 #define HFWD LG(RBKT)
 #define PASS LG(BSLH)
 #define MUTE LG(LS(M))
+#define MEH  LC(LA(LSHIFT))
 
 / {
   chosen {
@@ -73,9 +74,9 @@
     qwerty_layer {
       label = "QWERTY";
       bindings = <
-&kp Q        &kp W      &kp E            &kp R          &kp T          &kp Y &kp U      &kp I           &kp O        &kp P
-&kp A        &kp S      &kp D            &kp F          &kp G          &kp H &kp J      &kp K           &kp L        &lt FUNCTN SEMI
-&sm LSHIFT Z &hm LALT X &cm LCTRL C      &hm LGUI V     &kp B          &kp N &hm LGUI M &hm LCTRL COMMA &hm LALT DOT &sm LSHIFT SLASH
+&kp Q        &kp W      &kp E            &kp R          &kp T          &kp Y     &kp U      &kp I           &kp O        &kp P
+&kp A        &kp S      &kp D            &kp F          &kp G          &kp H     &kp J      &kp K           &kp L        &lt FUNCTN SEMI
+&sm LSHIFT Z &hm LALT X &cm LCTRL C      &hm LGUI V     &mt MEH B      &mt MEH N &hm LGUI M &hm LCTRL COMMA &hm LALT DOT &sm LSHIFT SLASH
 &none        &mo NUMBER &lt SYMBOL SPACE &lt NAVIGN RET &mt LCTRL BSPC &none
       >;
     };
